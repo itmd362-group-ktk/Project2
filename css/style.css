@@ -35,5 +35,45 @@ section {
   max-width: 800px;
   border-radius: 20px;
   border: 1px solid rgb(255, 255, 0);
-  box-shadow: 0 0 5px black;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+main section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main section:first-child {
+  margin-top: 0;
+}
+
+main section:last-child {
+  margin-bottom: 0;
+}
+
+#juice-picture-wrapper {
+  margin: 0 auto;
+
+  max-height: 600px;
+  width: fit-content;
+  padding: 5px;
+  background-image: conic-gradient(
+    from 45deg,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.39);
+}
+
+#juice-picture {
+  max-height: 600px;
+  display: block;
 }
