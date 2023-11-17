@@ -2,6 +2,12 @@ body {
   background-color: #23a4c4;
   color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  overflow-x: hidden;
+  border-bottom: 2px solid black;
 }
 
 nav {
@@ -27,11 +33,7 @@ nav ul li {
 nav ul li a {
   color: black;
   text-decoration: none;
-  transition: ease-out 0.1s color;
-}
-
-nav ul li a:hover {
-  color: #444444;
+  transition: ease-out 0.1s background-color;
 }
 
 hgroup {
@@ -50,12 +52,66 @@ h1.title span.penny {
   font-size: 2.25rem;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+main hgroup,
+section hgroup {
+  background-color: rgba(0, 0, 0, 0.719);
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+h1:not(.title),
+section hgroup h2 {
+  font-size: 3em;
+  color: transparent;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    rgb(246, 23, 23) 0%,
+    rgb(253, 255, 109) 17%,
+    rgb(9, 255, 0) 100%
+  );
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
+  font-weight: bold;
   font-variant-caps: all-small-caps;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 1.5em 0;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 0;
+  padding-left: 20px;
+}
+
+ul li {
+  padding: 0.5em 0;
+  font-size: 1.1em;
 }
 
 .marquee {
@@ -136,4 +192,148 @@ main section:last-child {
 #juice-picture {
   max-height: 600px;
   display: block;
+  width: 100%;
+}
+
+.order-wrapper {
+  margin: 0 auto;
+  width: 150px;
+  padding: 5px;
+  background-image: conic-gradient(
+    from 45deg,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 5px;
+}
+
+.order-button {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 0 5px white;
+  background-color: rgb(121, 255, 88);
+  display: block;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: inline-block;
+    background-color: rgb(255, 238, 125);
+    padding: 20px;
+    margin: 0;
+  }
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: #ffffff;
+  }
+
+  article {
+    margin: 15px auto;
+    max-width: 1000px;
+    background-color: #0000008a;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav,
+  nav ul,
+  nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    margin-top: 15px;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    display: block;
+    background-color: rgb(255, 238, 125);
+    padding: 20px;
+    margin: 0;
+    border-bottom: 1px solid black;
+  }
+  nav ul li:last-child a {
+    border-bottom: none;
+  }
+  nav ul li:hover,
+  nav ul li:focus {
+    background-color: #ffffff;
+  }
+}
+
+form li {
+  margin: 2em 5px;
+}
+
+form label {
+  display: inline-block;
+  width: 120px;
+}
+
+form input {
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: 1px solid rgba(39, 128, 39, 0.534);
+  margin: 3px 0;
+}
+
+form input[type="submit"] {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  form label {
+    display: block;
+    width: fit-content;
+  }
+  form li input {
+    display: block;
+    margin: 0.25em 0;
+    width: calc(100% - 10px);
+    padding: 0.5em;
+  }
+  form input[type="submit"] {
+    text-align: center;
+  }
+}
+
+@media (min-width: 560px) {
+  form {
+    background-color: transparent;
+  }
+}
+
+header {
+  background-color: #23a4c4;
+}
+
+body {
+  background-image: url("../media/background.png");
+  background-size: cover;
+}
+
+main {
+  margin: 10px;
+  margin-top: 15px;
 }
