@@ -48,58 +48,42 @@
             <label for="zip-code-id">Zip Code:</label>
             <input type="number" id="zip-code-id" name="zip-code-field" placeholder="zip code">
           </div>
-          <!--Juice Flavor Fields-->
-          <div class="field">
-
+          <!--Juice Flavor Selector-->
+          <div class="juice_selection_field">
+            <label for="selection">Select Flavor:</label>
+            <select name="juice" id="selection">
+              <option value="null">None</option>
+              <option value="null" disabled>--------------------------</option>
+              <option value="straw_bannana">Strawberry Bannana</option>
+              <option value="straw_kiwi">Strawberry Kiwi</option>
+              <option value="citris_punch">Citris Punch</option>
+              <option value="blue_ras">Blue Raspberry</option>
+              <option value="watermelon">Green Watermelon</option>
+              <option value="cran_apple">Cran-Apple</option>
+              <option value="orange_pineapple">Orange Pineapple</option>
+              <option value="berry">Berry</option>
+              <option value="null" disabled>--------------------------</option>
+              <option value="apple_cf">Apple (Color Free)</option>
+              <option value="white_grape_cf">White Grape (Color Free)</option>
+              <option value="peach_mango_cf">Peach Mango (Color Free)</option>
+              <option value="orange_ras_cf">Orange Raspberry (Color Free)</option>
+              <option value="cherry_cf">Cherry (Color Free)</option>
+              <option value="tangerine_cf">Tangerine (Color Free)</option>
+              <option value="fruit_punch_cf">Fruit Punch (Color Free)</option>
+              <option value="null" disabled>--------------------------</option>
+              <option value="mix">Mix Pitchers</option>
+            </select>
+            <label for="selection_qt">Quantity:</label>
+            <input type="number" id="selection_qt" name="selection_qt" placeholder="Enter Quantity Here">   
           </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
-          </div>
-          <div class="field">
-
+          <!--Add Juice Flavor Selector Buttons-->
+          <div class="controls">
+            <button class="add" onclick="add()"><i class="plus"></i>Add Selection</button>
+            <button class="remove" onclick="remove()"><i class="minus"></i>Remove Selection</button>
           </div>
           <!--Submit Fields-->
           <div class="submit-field">
-
+            <input name="submit" type="submit" value="Proceede to Checkout!">
           </div>
         </form>
       </div>
