@@ -125,7 +125,6 @@ hgroup p {
 .marquee {
   transform: translateX(0%);
   animation: scroll-left 20s linear infinite;
-  text-wrap: nowrap;
   white-space: nowrap;
 }
 
