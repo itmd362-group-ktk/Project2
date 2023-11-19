@@ -114,6 +114,14 @@ ul li {
   font-size: 1.1em;
 }
 
+hgroup p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-variant-caps: all-small-caps;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
 .marquee {
   transform: translateX(0%);
   animation: scroll-left 20s linear infinite;
@@ -167,7 +175,7 @@ main section:last-child {
   margin-bottom: 0;
 }
 
-#juice-picture-wrapper {
+.picture-wrapper {
   margin: 0 auto;
 
   max-height: 600px;
@@ -189,7 +197,7 @@ main section:last-child {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.39);
 }
 
-#juice-picture {
+.picture {
   max-height: 600px;
   display: block;
   width: 100%;
