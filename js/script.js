@@ -1,4 +1,12 @@
 window.addEventListener("load", () => {
+  let hamburger = document.getElementsByClassName("hamburger");
+  if (!hamburger[0]) {
+    console.log("Error: could not find hamburger button.");
+    return;
+  }
+  hamburger[0].addEventListener("click", () => {
+    document.body.classList.toggle("nav-show");
+  });
   let addBtn = document.getElementById("add-button");
   if (!addBtn) {
     console.log("Error: could not find Add Selection button.");
